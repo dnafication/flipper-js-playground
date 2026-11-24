@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "checkJs": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "noLib": true,
+        "skipLibCheck": true,
+        "target": "ES2015",
+        "types": [],
+    },
+    "files": [
+        "./node_modules/@flipperdevices/fz-sdk/global.d.ts",
+        "./lib/globals.d.ts",
+    ],
+    "include": [
+        "./**/*.ts",
+        "./**/*.js",
+    ],
+    "exclude": [
+        "./node_modules/**/*",
+        "dist/**/*",
+    ],
+}

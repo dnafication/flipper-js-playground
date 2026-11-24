@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+# Claude Code local overrides (settings.json is shared, this is not)
+.claude/settings.local.json

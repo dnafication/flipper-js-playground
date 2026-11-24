@@ -1,0 +1,19 @@
+{
+    "name": "flipper-js-playground",
+    "version": "1.0.0",
+    "private": true,
+    "description": "A playground of Flipper Zero JS API (mJS) GUI demos and reusable screen components, written in TypeScript.",
+    "scripts": {
+        "build": "tsc && node node_modules/@flipperdevices/fz-sdk/sdk.js build",
+        "start": "npm run build && node node_modules/@flipperdevices/fz-sdk/sdk.js upload",
+        "lint": "biome check --error-on-warnings .",
+        "lint:fix": "biome check --write .",
+        "check:bundle": "node scripts/check-bundle.mjs",
+        "verify": "npm run lint && npm run build && npm run check:bundle"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.6.8",
+        "@flipperdevices/fz-sdk": "^1.0",
+        "typescript": "^5.6.3"
+    }
+}
